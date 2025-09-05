@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo - Demonstração de Branches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Explorando o Mundo</h1>
+            <p class="subtitle">Descubra destinos incríveis para sua próxima aventura</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Natureza">
+                <div class="card-content">
+                    <h3>Paisagens Naturais</h3>
+                    <p>Descubra as mais belas paisagens naturais ao redor do mundo, desde montanhas majestosas até praias paradisíacas.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cidades">
+                <div class="card-content">
+                    <h3>Destinos Urbanos</h3>
+                    <p>Explore cidades vibrantes cheias de cultura, história e vida noturna para todos os gostos e estilos.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Aventura">
+                <div class="card-content">
+                    <h3>Aventuras Radicais</h3>
+                    <p>Para os mais aventureiros, experiências únicas que vão desde trilhas desafiantes até esportes radicais.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504675080242-15340864c9c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Gastronomia">
+                <div class="card-content">
+                    <h3>Gastronomia Local</h3>
+                    <p>Saboreie a culinária única de cada região, com pratos típicos e experiências gastronômicas inesquecíveis.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cultura">
+                <div class="card-content">
+                    <h3>Imersão Cultural</h3>
+                    <p>Viva experiências autênticas e mergulhe nas tradições e costumes locais de cada destino visitado.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Relaxamento">
+                <div class="card-content">
+                    <h3>Retiros Relaxantes</h3>
+                    <p>Destinos perfeitos para recarregar as energias, com spas, paisagens tranquilas e acomodações luxuosas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Explorando o Mundo - Página de demonstração para branches no GitHub</p>
+        </div>
+    </footer>
+</body>
+</html>
